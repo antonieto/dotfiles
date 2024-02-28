@@ -13,7 +13,7 @@ require('antonioch.barbar')
 require('antonioch.kanagawa')
 require('antonioch.everforest')
 
-colorscheme = "gruvbox-material"
+colorscheme = "everforest"
 
 vim.cmd.colorscheme(colorscheme)
 
