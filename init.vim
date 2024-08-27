@@ -11,3 +11,5 @@ set completeopt=menu,menuone,noselect
 source $HOME/.config/nvim/plug-config/init.vim
 
 lua require('antonioch')
+
+set clipboard+=unnamedplus

@@ -29,6 +29,8 @@ Plug 'w0rp/ale' " Asynchronous Lint Engine
 Plug 'sindrets/diffview.nvim' " Diffview
 Plug 'editorconfig/editorconfig-vim' " Editorconfig
 Plug 'vim-scripts/cup.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+Plug 'folke/trouble.nvim' "  Error display
 
 
 " Themes
