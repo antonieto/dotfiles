@@ -24,13 +24,13 @@ Plug 'nvim-treesitter/playground' " Nvim treesitter playground
 Plug 'nvim-lua/plenary.nvim' " A dependency for nvim telescope
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' } " Fuzzy finder
 Plug 'sbdchd/neoformat' " Formatter
-Plug 'github/copilot.vim' " Github copilot
+" Plug 'github/copilot.vim' " Github copilot
 Plug 'w0rp/ale' " Asynchronous Lint Engine
 Plug 'sindrets/diffview.nvim' " Diffview
 Plug 'editorconfig/editorconfig-vim' " Editorconfig
 Plug 'vim-scripts/cup.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
-Plug 'folke/trouble.nvim' "  Error display
+Plug 'folke/trouble.nvim'  "  Error display
 
 
 " Themes
@@ -38,7 +38,6 @@ Plug 'luisiacc/gruvbox-baby', {'branch': 'main'}
 Plug 'sainnhe/gruvbox-material'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
-Plug 'rmehri01/onenord.nvim', { 'branch': 'main' }
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
 Plug 'sainnhe/sonokai', { 'as': 'sonokai' }

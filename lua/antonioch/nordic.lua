@@ -47,3 +47,4 @@ require 'nordic' .setup {
     },
 }
 
+local trouble = require('trouble')

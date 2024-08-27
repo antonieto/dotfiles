@@ -8,10 +8,10 @@ require('antonioch.catppuccin')
 require('antonioch.nvimtree')
 require('antonioch.keymaps')
 require('antonioch.nordic')
-require('antonioch.onenord')
 require('antonioch.barbar')
 require('antonioch.kanagawa')
 require('antonioch.everforest')
+require('antonioch.trouble')
 
 colorscheme = "everforest"
 
