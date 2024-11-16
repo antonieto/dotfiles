@@ -13,7 +13,7 @@ require('antonioch.kanagawa')
 require('antonioch.everforest')
 require('antonioch.trouble')
 
-colorscheme = "everforest"
+colorscheme = "catppuccin-frappe"
 
 vim.cmd.colorscheme(colorscheme)
 

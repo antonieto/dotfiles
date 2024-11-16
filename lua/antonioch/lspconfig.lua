@@ -1,6 +1,6 @@
 local nvim_lsp = require('lspconfig')
 local servers = {
-	'tsserver',
+	'ts_ls',
 	'pyright',
 	'rust_analyzer',
 	'cssls',

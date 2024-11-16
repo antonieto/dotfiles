@@ -1,3 +1,5 @@
+local trouble = require("trouble")
+
 ---@class trouble.Mode: trouble.Config,trouble.Section.spec
 ---@field desc? string
 ---@field sections? string[]
@@ -202,5 +204,12 @@ local defaults = {
   },
 }
 
-local trouble = require("trouble")
+
+local opts = { noremap = true, silent = true }
+
+-- Key maps
+vim.api.nvim_set_keymap("n" ,"<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", opts)
+
+vim.api.nvim_set_keymap("n", "<leader>xX", "<cmd>Trouble diagnostics toggle<cr>", opts)
+
 trouble.setup(defaults)

@@ -7,7 +7,7 @@ require 'nordic' .setup {
     -- Enable italic comments.
     italic_comments = true,
     -- Enable general editor background transparency.
-    transparent_bg = true,
+    transparent = true,
     -- Nordic specific options.
     -- Set all to false to use original Nord colors.
     -- Adjusts some colors to make the theme a bit nicer (imo).
@@ -24,7 +24,7 @@ require 'nordic' .setup {
         brighter_whites = true,
     },
     -- Override the styling of any highlight group.
-    override = {},
+    on_highlight = {},
     cursorline = {
         -- Enable bold font in cursorline.
         bold = false,
