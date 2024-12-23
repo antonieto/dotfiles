@@ -1,3 +1,4 @@
+require('antonioch.cmp')
 require('antonioch.lspconfig')
 require('antonioch.better_escape')
 require('antonioch.mason-quickstart')

@@ -1,7 +1,7 @@
 local nvim_lsp = require('lspconfig')
 local servers = {
 	'ts_ls',
-	'pyright',
+	'pylsp',
 	'rust_analyzer',
 	'cssls',
 	'tailwindcss',
@@ -11,8 +11,8 @@ local servers = {
 	'clangd',
 	'jdtls',
 	'angularls',
+	'lua_ls'
 }
-
 -- -- Use an on_attach function to only map the following keys
 -- -- after the language server attaches to the current buffer
 
@@ -49,22 +49,25 @@ local on_attach = function(client, bufnr)
     vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 end
 
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 for _, lsp in pairs(servers) do
 	nvim_lsp[lsp].setup {
         on_attach = on_attach,
         flags = {
           debounce_text_changes = 150,
-        }
+        },
+		capabilities = capabilities
     }
 end
 
 -- this is for diagnositcs signs on the line number column
 -- use this to beautify the plain E W signs to more fun ones
 -- !important nerdfonts needs to be setup for this to work in your terminal
-local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " } 
+local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 for type, icon in pairs(signs) do
     local hl = "DiagnosticSign" .. type
     vim.fn.sign_define(hl, { text = icon, texthl= hl, numhl = hl })
+	
 end
 
 
